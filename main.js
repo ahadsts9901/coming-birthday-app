@@ -170,7 +170,7 @@ setInterval(
 
         let currentHour = currentFullDate.getHours()
 
-        let NewHour = 24 - currentHour
+        let NewHour = 23 - currentHour
 
 
         if (NewHour === 0) {
@@ -297,6 +297,18 @@ setInterval(
         } else {
 
             millisecond1 = 'Milliseconds'
+
+        }
+
+        //months error
+
+        if(months === -1){
+
+            months = 11
+
+        }else{
+
+            months = months
 
         }
 
